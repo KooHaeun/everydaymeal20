@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "78491622221",
+    "project_id": "everydaymeal-17f94",
+    "storage_bucket": "everydaymeal-17f94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78491622221:android:d4118a779dffe015ae7504",
+        "android_client_info": {
+          "package_name": "com.example.everydaymeal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78491622221-3a3u01272gdqq264ecnl50a5ft37aksv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCc9sQQ_vD14bprOetmaFjFOhkiEBRMV08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "78491622221-3a3u01272gdqq264ecnl50a5ft37aksv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

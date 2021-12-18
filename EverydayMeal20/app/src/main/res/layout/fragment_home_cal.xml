@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeCalFragment">
+
+
+    <TextView
+        android:id="@+id/text_home"
+        style="@style/title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:text="- 오늘도 맛있는 하루 -"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_home">
+
+        <TextView
+            android:id="@+id/mealTimetv"
+            style="@style/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="식사시간" />
+
+        <Button
+            android:id="@+id/mealTimebtn"
+            style="@style/inText"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ettv"
+            android:text="선택" />
+
+        <TextView
+            android:id="@+id/sortTv"
+            style="@style/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="유형" />
+
+        <TextView
+            android:id="@+id/sortExplain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="※새벽에 드신 야식은 전일 기록에 합산됩니다." />
+
+        <RadioGroup
+            android:id="@+id/sortRg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/sortRb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="식사" />
+
+            <RadioButton
+                android:id="@+id/sortRb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="간식" />
+
+            <RadioButton
+                android:id="@+id/sortRb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="야식" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/menutv"
+            style="@style/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="메뉴" />
+
+        <EditText
+            android:id="@+id/menuEdit"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ettv"
+            android:hint=" ex) 제육볶음, 한정식" />
+
+        <TextView
+            android:id="@+id/caltv"
+            style="@style/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="칼로리(kcal)"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/calEdit"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ettv"
+            android:hint=" ex) 식사의 열량을 kcal단위로 입력"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/fullTv"
+            style="@style/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="포만감" />
+
+        <RadioGroup
+            android:id="@+id/fullRg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/fullRb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아쉬워요" />
+
+            <RadioButton
+                android:id="@+id/fullRb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="적당해요" />
+
+            <RadioButton
+                android:id="@+id/fullRb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="배불러요" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="60dp"
+        android:text="저장"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

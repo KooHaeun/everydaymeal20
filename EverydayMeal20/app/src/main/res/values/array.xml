@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alramTime">
+        <item>  사용하지않음</item>
+        <item>  15분전</item>
+        <item>  5분전</item>
+        <item>  바로 알림</item>
+        <item>  10분후</item>
+    </string-array>
+
+    <string-array name="sort">
+        <item>식사</item>
+        <item>간식</item>
+        <item>야식</item>
+    </string-array>
+
+
+
+</resources>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/main"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/black"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/breakfastTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text"
+        android:text="평소 아침식사 시간"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line" />
+        <RadioGroup
+            android:id="@+id/breakfastRg"
+            android:layout_marginTop="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/breakfastRb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="시간 선택"/>
+
+            <RadioButton
+                android:id="@+id/breakfastRb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="불규칙적임" />
+
+            <RadioButton
+                android:id="@+id/breakfastRb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="평소 먹지 않음"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/linear1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lunchTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text"
+            android:text="평소 점심식사 시간"/>
+
+        <RadioGroup
+            android:id="@+id/lunchRg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/lunchRb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="시간 선택"/>
+
+            <RadioButton
+                android:id="@+id/lunchRb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="불규칙적임" />
+
+            <RadioButton
+                android:id="@+id/lunchRb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="평소 먹지 않음"/>
+
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/linear2"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dinnerTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text"
+        android:text="평소 저녁식사 시간" />
+
+    <RadioGroup
+        android:id="@+id/dinnerRg"
+        android:orientation="horizontal"
+        android:layout_marginTop="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/dinnerRb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시간 선택" />
+
+        <RadioButton
+            android:id="@+id/dinnerRb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="불규칙적임" />
+        <RadioButton
+            android:id="@+id/dinnerRb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="평소 먹지 않음"/>
+        </RadioGroup>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="-식사시간 설정-"
+            style="@style/title1" />
+        <TextView
+            android:id="@+id/breakfastTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text"
+            android:layout_marginTop="32dp"
+            android:text="평소 아침식사 시간"/>
+
+        <RadioGroup
+            android:id="@+id/breakfastRg1"
+            app:layout_constraintTop_toBottomOf="@id/breakfastTime"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="17dp"
+            >
+                <RadioButton
+                    android:id="@+id/breakfastRd11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="시간 선택"/>
+
+                <RadioButton
+                    android:id="@+id/breakfastRd21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="불규칙적임" />
+                <RadioButton
+                    android:id="@+id/breakfastRd31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="평소 먹지 않음"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/lunchTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            style="@style/text"
+            android:text="평소 점심식사 시간"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/breakfastRg1" />
+
+        <RadioGroup
+            android:id="@+id/lunchRg1"
+            app:layout_constraintTop_toBottomOf="@id/lunchTime"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="17dp"
+            >
+                <RadioButton
+                    android:id="@+id/lunchRd11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="시간 선택"/>
+
+                <RadioButton
+                    android:id="@+id/lunchRd21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="불규칙적임" />
+
+                <RadioButton
+                    android:id="@+id/lunchRd31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="평소 먹지 않음"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/dinnerTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            style="@style/text"
+            android:text="평소 저녁식사 시간"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lunchRg1" />
+
+        <RadioGroup
+            android:id="@+id/dinnerRg1"
+            app:layout_constraintTop_toBottomOf="@id/dinnerTime"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="17dp"
+            >
+                <RadioButton
+                    android:id="@+id/dinnerRd11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="시간 선택"/>
+
+                <RadioButton
+                    android:id="@+id/dinnerRd21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="불규칙적임" />
+                <RadioButton
+                    android:id="@+id/dinnerRd31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="평소 먹지 않음"/>
+        </RadioGroup>
+        <TextView
+            android:id="@+id/alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            style="@style/text"
+            android:text="식사시간 알림 여부"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dinnerRg1" />
+
+        <TextView
+            android:id="@+id/alarmExplain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="※본 알림 기능은 '평소 식사시간'을 기준으로 \n알림을 울립니다."
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/alarm" />
+        <Spinner
+            android:id="@+id/alarmSpin"
+            app:layout_constraintTop_toBottomOf="@id/alarmExplain"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="17dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:entries="@array/alramTime" />
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="340dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="60dp"
+
+            android:text="저장"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
